@@ -9,7 +9,7 @@ public class HelloController {
 
     @RequestMapping("/start")
     public ModelAndView hello(ModelAndView modelAndView){
-        modelAndView.setViewName("Hello");
+        modelAndView.setViewName("hello");
         return modelAndView;
     }
 }
