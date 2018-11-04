@@ -8,7 +8,7 @@
     <!-- Bootstrap core CSS -->
     <link href="../../resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- ${testowa} -->
     <link href="starter-template.css" rel="stylesheet">
 
 </head>

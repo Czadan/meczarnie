@@ -23,7 +23,7 @@ public class TaskController {
     @RequestMapping("/task")
     public ModelAndView taskDetails (ModelAndView modelAndView, @RequestParam("id") Long id){
         modelAndView.addObject("task", taskService.getTask(id));
-        modelAndView.setViewName("task detail");
+        modelAndView.setViewName("taskDetails");
         return modelAndView;
 
     }
