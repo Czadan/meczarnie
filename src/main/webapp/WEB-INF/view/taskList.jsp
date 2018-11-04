@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<%@ page language="java" contentType="text/html charset=UTF-8"%>
 <%@ taglib prefix="tg" tagdir="/WEB-INF/tags" %>
-pageEncoding="UTF-8" %>
+
 <%--@elvariable id="task" type="com.sda.task.model.Task"--%>
 <%--Komentarz--%>
 <!DOCTYPE html>
@@ -25,7 +25,8 @@ pageEncoding="UTF-8" %>
                 </thead>
                 <tbody>
                 <c:forEach var="task" items="${tasks}" varStatus="loop">
-                    <tg:taskRow task="${task}" rowId="${loop.index}"></tg:taskRow>
+                    <c:set var="rowId" value="${loop.index+1}"></c:set>
+                    <tg:taskRow task="${task}" rowId="${rowId}"></tg:taskRow>
                 </c:forEach>
                 </tbody>
             </table>

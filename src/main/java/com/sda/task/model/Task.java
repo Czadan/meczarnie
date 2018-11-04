@@ -1,8 +1,16 @@
 package com.sda.task.model;
 
+
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.time.LocalDateTime;
 
+@Entity
 public class Task {
+    @Id
+    @GeneratedValue
     private Long id;
 
     private String name;
